@@ -15,11 +15,19 @@
 
     <Button
         android:id="@+id/play_pause_button"
-        android:text="Читать"
+        android:text="Слушать сказку"
         app:layout_constraintTop_toBottomOf="@id/player_seek"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="playOrPause"
     />
+
+    <ListView
+        android:id="@+id/tales_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintTop_toBottomOf="@id/play_pause_button"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
